@@ -1,0 +1,37 @@
+{
+  "name": "crawler-covid-19",
+  "version": "1.0.0",
+  "description": "Raspagem de dados e API sobre o Covid 19",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "pm2 start server.js --watch --no-daemon --node-args=\"-r esm\"",
+    "prod": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AurelioMarquesVulcao/crawler-COVID-19.git"
+  },
+  "author": "Aurelio Marques Vulcão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AurelioMarquesVulcao/crawler-COVID-19/issues"
+  },
+  "homepage": "https://github.com/AurelioMarquesVulcao/crawler-COVID-19#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "json2csv": "^5.0.0",
+    "mongoose": "^5.9.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2",
+    "pm2": "^4.2.3",
+    "request": "^2.88.2"
+  }
+}
